@@ -3,7 +3,7 @@
 // });
 
 fetch("https://daybreak-server.onrender.com/session", { credentials: "include" })
-    .then(x => console.log(x.sid));
+    .then(x => console.log(x));
 
 const socket = io("https://daybreak-server.onrender.com", {
     withCredentials: true,
