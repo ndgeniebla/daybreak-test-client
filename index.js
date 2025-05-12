@@ -3,7 +3,8 @@
 // });
 
 const socket = io("https://daybreak-server.onrender.com", {
-    withCredentials: true
+    withCredentials: true,
+    transports: ["polling"]
 });
 
 let playerId = "";
