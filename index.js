@@ -1,4 +1,8 @@
-const socket = io("http://localhost:3000", {
+// const socket = io("http://localhost:3000", {
+//     withCredentials: true
+// });
+
+const socket = io("http://ec2-54-176-55-177.us-west-1.compute.amazonaws.com:3000/", {
     withCredentials: true
 });
 
