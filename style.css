@@ -1,0 +1,120 @@
+html {
+    font-family: sans-serif;
+}
+
+.displayNone {
+    display: none;
+}
+
+.currentLobby {
+    border-top: 1px solid black;
+}
+
+.lobbyId, .playerId {
+    font-weight: 600;
+}
+
+.characterBtns {
+    margin-bottom: 2rem;
+}
+
+.characterSelected {
+    /* border: 3px solid green; */
+    background-color: lightblue;
+}
+
+.playerReady {
+    background-color: lightgreen;
+}
+
+.startGame {
+    background-color: yellow;
+}
+
+.characterTaken {
+    background-color: lightcoral;
+}
+
+.board {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.tile {
+    background-color: lightgrey;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    padding: 0.25rem;
+}
+
+.badTile {
+    border: 3px solid red;
+    /* background-color: lightcoral !important; */
+}
+
+.players {
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.tileDetails {
+    font-size: 0.5rem;
+}
+
+.log {
+    margin-bottom: 1rem;
+}
+
+.death {
+    background-color: black !important;
+    color: white;
+}
+
+.monsterContainer {
+    color: red;
+    font-weight: 600;
+}
+
+.allLose {
+    font-size: 2rem;
+    color: red;
+    font-weight: 600;
+}
+
+.targetPlayers {
+    margin-bottom: 1rem;
+}
+
+.targetPlayers button {
+    background-color: mistyrose;
+}
+
+.you {
+    background-color: lightseagreen;
+    color: white;
+    font-weight: 600;
+}
+
+.other {
+    background-color: sandybrown;
+    color: black;
+}
+
+.you, .other {
+    border: 1px solid black;
+    padding: 1px 3px;
+    margin: 2px 2px;
+}
+
+.deadMsg {
+    color: red;
+    font-weight: 600;
+}
+
+.trapTile {
+    background-color: mediumvioletred;
+    color: white
+}

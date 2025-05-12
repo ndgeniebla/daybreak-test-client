@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://cdn.socket.io/4.8.1/socket.io.min.js"
+            integrity="sha384-mkQ3/7FUtcGyoppY6bz/PORYoGqOl7/aSUMn2ymDOJcapfS6PHqxhRTMh1RR0Q6+"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+        <script defer type="text/javascript" src="helpers.js"></script>
+        <script defer type="text/javascript" src="index.js"></script>
+        <script defer type="text/javascript" src="handlers/boardHandler.js"></script>
+        <script defer type="text/javascript" src="handlers/spCardHandler.js"></script>
+        <script defer type="text/javascript" src="handlers/mpCardHandler.js"></script>
+        <script defer type="text/javascript" src="handlers/mirrorHandler.js"></script>
+    </head>
+    <body>
+        <h1>Daybreak Test Client</h1>
+        <p>Your Player ID: <span class="playerId"></span></p>
+        
+        <div class="lobbyScreen">
+            <button class="createLobbyBtn">Create Lobby</button>
+            <script defer type="text/javascript" src="lobby.js"></script>
+            <script
+                defer
+                type="text/javascript"
+                src="playerDetailsSelect.js"
+            ></script>
+            <script defer type="text/javascript" src="gameScene.js"></script>
+
+            <form class="joinLobbyForm">
+                <input
+                    class="roomCodeInput"
+                    name="roomCode"
+                    type="text"
+                    placeholder="Room Code"
+                />
+                <button>Join</button>
+            </form>
+
+            <h2>All Lobbies</h2>
+            <div class="lobbies"></div>
+
+            <div class="currentLobby displayNone">
+                <h3>Lobby Details</h3>
+                <p>Code: <span class="lobbyId"></span></p>
+
+                <button class="pingLobby">Ping Lobby</button>
+                <p class="lobbyMsg"></p>
+
+                <button class="pingEntireLobby">Ping Entire Lobby</button>
+                <p class="lobbyWideMsg"></p>
+
+                <div class="characterBtns">
+                    <button class="moosy">Moosy</button>
+                    <button class="egbert">Egbert</button>
+                    <button class="crowly">Crowly</button>
+                    <button class="spike">Spike</button>
+                    <button class="carotina">Carotina</button>
+                    <button class="grog">Grog</button>
+                </div>
+
+                <input
+                    type="text"
+                    class="nicknameInput"
+                    placeholder="Nickname"
+                />
+                <p>
+                    <button class="readyButton" disabled="true">Ready!</button>
+                    <button class="startGame displayNone">Start Game!</button>
+                </p>
+
+                <p><button class="leaveLobby">Leave Lobby</button></p>
+            </div>
+        </div>
+        <div class="gameScene displayNone">
+            <h2>GameSession [<span class="gameLobbyId"></span>]</h2>
+            <div class="gameStatus"></div>
+            <div class="board"></div>
+            <div class="log"></div>
+            <div class="targetTiles"></div>
+            <div class="targetPlayers"></div>
+            <div class="denyCancelCont"></div>
+            <div class="hand"></div>
+            <p><button class="drawCard playerControls" disabled="true">Draw Card</button> <button class="movePlayer playerControls" disabled="true">Move</button><span class="diceNum playerStatus"></span></p>
+            <p><button class="endTurn playerControls" disabled="true">End Turn</button></p>
+        </div>
+    </body>
+</html>
