@@ -2,9 +2,6 @@
 //     withCredentials: true
 // });
 
-fetch("https://daybreak-server.onrender.com/session", { credentials: "include" })
-    .then(x => console.log(x));
-
 const socket = io("https://daybreak-server.onrender.com", {
     withCredentials: true,
     transports: ["polling"]
