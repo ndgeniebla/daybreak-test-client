@@ -2,6 +2,21 @@
 //     withCredentials: true
 // });
 
+
+let playerId = "";
+let playerDetails;
+
+let players;
+let playerPositions = {};
+let monsterPos = -1;
+let isDead = false;
+let hasMoved = false;
+let isTurn = false;
+let gameBoard;
+
+let joinedLobbyId = "";
+
+
 async function main() {
     await fetch("https://daybreak-server.onrender.com/session", {
         credentials: "include"
@@ -11,19 +26,6 @@ async function main() {
         withCredentials: true,
         transports: ["polling"]
     });
-
-    let playerId = "";
-    let playerDetails;
-
-    let players;
-    let playerPositions = {};
-    let monsterPos = -1;
-    let isDead = false;
-    let hasMoved = false;
-    let isTurn = false;
-    let gameBoard;
-
-    let joinedLobbyId = "";
 
     window.addEventListener("load", e => {
         // Array.from(document.querySelectorAll("input")).forEach(input => input.value = "");
@@ -65,3 +67,5 @@ async function main() {
         })
     })
 }
+
+main();
