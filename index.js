@@ -2,7 +2,7 @@
 //     withCredentials: true
 // });
 
-const socket = io("https://ec2-54-176-55-177.us-west-1.compute.amazonaws.com:3000/", {
+const socket = io("https://ec2-54-176-55-177.us-west-1.compute.amazonaws.com:3000", {
     withCredentials: true
 });
 
