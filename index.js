@@ -2,7 +2,7 @@
 //     withCredentials: true
 // });
 
-const socket = io("https://daybreak-server.onrender.com:10000", {
+const socket = io("https://daybreak-server.onrender.com", {
     withCredentials: true
 });
 
