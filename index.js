@@ -1,8 +1,6 @@
-// const socket = io("http://localhost:3000", {
-//     withCredentials: true
-// });
+const PROD = true;
 
-const socket = io("https://daybreak-server.onrender.com", {
+const socket = io(PROD ? "https://daybreak-server.onrender.com" : "http://localhost:3000", {
     withCredentials: true,
     transports: ["polling"]
 });
